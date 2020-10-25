@@ -1,0 +1,11 @@
+vehicleBrand,model,year,engine/name,engine/type,powerOutput,torque,topSpeed,acceleration,weight,bootSpace
+Audi,RS 4 Avant,2019,2.9 TFSI V6,petrol,450,600,250,4.1,1745,495
+Audi,RS 6 Avant,2019,4.0-liter V-8,petrol,441,800,250,3.6,2075,565
+Audi,A8,2020,3.0-liter V-6,petrol,250,500,250,5.6,1960,505
+Volkswagen,Up!,2013,1.0 L I3-T ,petrol,60,95,159,15.3,932,251
+Opel,Insignia,2015,2.8 litre turbocharged V6,petrol,325,435,270,6,1735,500
+Mitsubishi,Lancer,2010,2.4-liter I-4 ,petrol,152,146,221,9.8,1350,344
+Toyota,Yaris,2019,1.5-liter DOHC 4-CYL,petrol,106,140,193,9.7,1109,286
+Volkswagen,Passat,2015,turbocharged 1.8-liter I-4,petrol,170,250,250,8.7,1109,1436
+Toyota,Rav4,2019,2.5L L4 DOHC 16-valve,petrol,203,233,250,9.9,1445,1436
+Opel,Astra,2008,1.7 CDTI ECOTEC,petrol,115,280,210,11.6,1145,580
