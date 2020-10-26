@@ -1,0 +1,11 @@
+vehicleBrand,model,year,engine/name,engine/type,powerOutput,torque,topSpeed,acceleration,weight,bootSpace,awards/0/event,awards/0/award,awards/1/event,awards/1/award
+Audi,RS 4 Avant,2019,2.9 TFSI V6,petrol,450,600,250,4.1,1745,495,ST-Torque Awards,Best Performance Wagon,,
+Audi,RS 6 Avant,2019,4.0-liter V-8,petrol,441,800,250,3.6,2075,565,Top Gear,Family car of the year,,
+Audi,A8,2020,3.0-liter V-6,petrol,250,500,250,5.6,1960,505,Wards 10,Best user experience,PArkers,Best Luxury Car
+Volkswagen,Up!,2013,1.0 L I3-T ,petrol,60,95,159,15.3,932,251,CarSite,Best city car,Buisness Car Awards,Best city car
+Opel,Insignia,2015,2.8 litre turbocharged V6,diesel,325,435,270,6,1735,500,DEKRA,Car with fewest flaws,Buisness Car,Best upper medium car
+Mitsubishi,Lancer,2010,2.4-liter I-4 ,petrol,152,146,221,9.8,1350,344,,,,
+Toyota,Yaris,2019,1.5-liter DOHC 4-CYL,petrol,106,140,193,9.7,1109,286,ASG AWARDS,Best All-Around Performance,NOTEWORTHY ASG FINDING,op all-around performing Mini-compact
+Volkswagen,Passat,2015,turbocharged 1.8-liter I-4,petrol,170,250,250,8.7,1109,1436,Geneva motor show,Car of the Year,,
+Toyota,Rav4,2019,2.5L L4 DOHC 16-valve,petrol,203,233,250,9.9,1445,1436,Wards 10,Best Interior Award,NHTSA,5-Star Overall Safety Rating
+Opel,Astra,2008,1.7 CDTI ECOTEC,petrol,115,280,210,11.6,1145,580,,,,
