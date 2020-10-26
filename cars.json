@@ -11,7 +11,11 @@
 	"topSpeed": 250,
 	"acceleration": 4.1,
 	"weight": 1745,
-	"bootSpace": 495
+	"bootSpace": 495,
+	"awards": [{
+		"event": "ST-Torque Awards",
+		"award": "Best Performance Wagon"
+	}]
 }, {
 	"vehicleBrand": "Audi",
 	"model": "RS 6 Avant",
@@ -25,7 +29,11 @@
 	"topSpeed": 250,
 	"acceleration": 3.6,
 	"weight": 2075,
-	"bootSpace": 565
+	"bootSpace": 565,
+	"awards": [{
+		"event": "Top Gear",
+		"award": "Family car of the year"
+	}]
 }, {
 	"vehicleBrand": "Audi",
 	"model": "A8",
@@ -39,7 +47,14 @@
 	"topSpeed": 250,
 	"acceleration": 5.6,
 	"weight": 1960,
-	"bootSpace": 505
+	"bootSpace": 505,
+	"awards": [{
+		"event": "Wards 10",
+		"award": "Best user experience"
+	}, {
+		"event": "PArkers",
+		"award": "Best Luxury Car"
+	}]
 }, {
 	"vehicleBrand": "Volkswagen",
 	"model": "Up!",
@@ -53,7 +68,14 @@
 	"topSpeed": 159,
 	"acceleration": 15.3,
 	"weight": 932,
-	"bootSpace": 251
+	"bootSpace": 251,
+	"awards": [{
+		"event": "CarSite",
+		"award": "Best city car"
+	}, {
+		"event": "Buisness Car Awards",
+		"award": "Best city car"
+	}]
 }, {
 	"vehicleBrand": "Opel",
 	"model": "Insignia",
@@ -67,7 +89,14 @@
 	"topSpeed": 270,
 	"acceleration": 6,
 	"weight": 1735,
-	"bootSpace": 500
+	"bootSpace": 500,
+	"awards": [{
+		"event": "DEKRA",
+		"award": "Car with fewest flaws"
+	}, {
+		"event": "Buisness Car",
+		"award": "Best upper medium car"
+	}]
 }, {
 	"vehicleBrand": "Mitsubishi",
 	"model": "Lancer",
@@ -81,7 +110,8 @@
 	"topSpeed": 221,
 	"acceleration": 9.8,
 	"weight": 1350,
-	"bootSpace": 344
+	"bootSpace": 344,
+	"awards": []
 }, {
 	"vehicleBrand": "Toyota",
 	"model": "Yaris",
@@ -95,7 +125,14 @@
 	"topSpeed": 193,
 	"acceleration": 9.7,
 	"weight": 1109,
-	"bootSpace": 286
+	"bootSpace": 286,
+	"awards": [{
+		"event": "ASG AWARDS",
+		"award": "Best All-Around Performance"
+	}, {
+		"event": "NOTEWORTHY ASG FINDING",
+		"award": "op all-around performing Mini-compact"
+	}]
 }, {
 	"vehicleBrand": "Volkswagen",
 	"model": "Passat",
@@ -109,7 +146,11 @@
 	"topSpeed": 250,
 	"acceleration": 8.7,
 	"weight": 1109,
-	"bootSpace": 1436
+	"bootSpace": 1436,
+	"awards": [{
+		"event": "Geneva motor show",
+		"award": "Car of the Year"
+	}]
 }, {
 	"vehicleBrand": "Toyota",
 	"model": "Rav4",
@@ -123,7 +164,14 @@
 	"topSpeed": 250,
 	"acceleration": 9.9,
 	"weight": 1445,
-	"bootSpace": 1436
+	"bootSpace": 1436,
+	"awards": [{
+		"event": "Wards 10",
+		"award": "Best Interior Award"
+	}, {
+		"event": "NHTSA",
+		"award": "5-Star Overall Safety Rating"
+	}]
 }, {
 	"vehicleBrand": "Opel",
 	"model": "Astra",
@@ -137,5 +185,6 @@
 	"topSpeed": 210,
 	"acceleration": 11.6,
 	"weight": 1145,
-	"bootSpace": 580
+	"bootSpace": 580,
+	"awards": []
 }]
