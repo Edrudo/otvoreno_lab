@@ -12,6 +12,7 @@
 	"acceleration": 4.1,
 	"weight": 1745,
 	"bootSpace": 495,
+	"wikipediaSufix": "Audi_RS_4",
 	"awards": [{
 		"event": "ST-Torque Awards",
 		"award": "Best Performance Wagon"
@@ -30,6 +31,7 @@
 	"acceleration": 3.6,
 	"weight": 2075,
 	"bootSpace": 565,
+	"wikipediaSufix": "Audi_RS_6",
 	"awards": [{
 		"event": "Top Gear",
 		"award": "Family car of the year"
@@ -48,6 +50,7 @@
 	"acceleration": 5.6,
 	"weight": 1960,
 	"bootSpace": 505,
+	"wikipediaSufix": "Audi_A8",
 	"awards": [{
 		"event": "Wards 10",
 		"award": "Best user experience"
@@ -69,6 +72,7 @@
 	"acceleration": 15.3,
 	"weight": 932,
 	"bootSpace": 251,
+	"wikipediaSufix": "Volkswagen_Up",
 	"awards": [{
 		"event": "CarSite",
 		"award": "Best city car"
@@ -90,6 +94,7 @@
 	"acceleration": 6,
 	"weight": 1735,
 	"bootSpace": 500,
+	"wikipediaSufix": "Opel_Insignia",
 	"awards": [{
 		"event": "DEKRA",
 		"award": "Car with fewest flaws"
@@ -111,6 +116,7 @@
 	"acceleration": 9.8,
 	"weight": 1350,
 	"bootSpace": 344,
+	"wikipediaSufix": "Mitsubishi_Lancer",
 	"awards": []
 }, {
 	"vehicleBrand": "Toyota",
@@ -126,6 +132,7 @@
 	"acceleration": 9.7,
 	"weight": 1109,
 	"bootSpace": 286,
+	"wikipediaSufix": "Toyota_Yaris",
 	"awards": [{
 		"event": "ASG AWARDS",
 		"award": "Best All-Around Performance"
@@ -147,6 +154,7 @@
 	"acceleration": 8.7,
 	"weight": 1109,
 	"bootSpace": 1436,
+	"wikipediaSufix": "Volkswagen_Passat",
 	"awards": [{
 		"event": "Geneva motor show",
 		"award": "Car of the Year"
@@ -165,6 +173,7 @@
 	"acceleration": 9.9,
 	"weight": 1445,
 	"bootSpace": 1436,
+	"wikipediaSufix": "Toyota_RAV4",
 	"awards": [{
 		"event": "Wards 10",
 		"award": "Best Interior Award"
@@ -186,5 +195,6 @@
 	"acceleration": 11.6,
 	"weight": 1145,
 	"bootSpace": 580,
+	"wikipediaSufix": "Opel_Astra",
 	"awards": []
 }]
