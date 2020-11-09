@@ -1,0 +1,200 @@
+db.getCollection("lab2").insertMany([{
+	"vehicleBrand": "Audi",
+	"model": "RS 4 Avant",
+	"year": 2019,
+	"engine": {
+		"name": "2.9 TFSI V6",
+		"type": "petrol"
+	},
+	"powerOutput": 450,
+	"torque": 600,
+	"topSpeed": 250,
+	"acceleration": 4.1,
+	"weight": 1745,
+	"bootSpace": 495,
+	"wikipediaSufix": "Audi_RS_4",
+	"awards": [{
+		"event": "ST-Torque Awards",
+		"award": "Best Performance Wagon"
+	}]
+}, {
+	"vehicleBrand": "Audi",
+	"model": "RS 6 Avant",
+	"year": 2019,
+	"engine": {
+		"name": "4.0-liter V-8",
+		"type": "petrol"
+	},
+	"powerOutput": 441,
+	"torque": 800,
+	"topSpeed": 250,
+	"acceleration": 3.6,
+	"weight": 2075,
+	"bootSpace": 565,
+	"wikipediaSufix": "Audi_RS_6",
+	"awards": [{
+		"event": "Top Gear",
+		"award": "Family car of the year"
+	}]
+}, {
+	"vehicleBrand": "Audi",
+	"model": "A8",
+	"year": 2020,
+	"engine": {
+		"name": "3.0-liter V-6",
+		"type": "petrol"
+	},
+	"powerOutput": 250,
+	"torque": 500,
+	"topSpeed": 250,
+	"acceleration": 5.6,
+	"weight": 1960,
+	"bootSpace": 505,
+	"wikipediaSufix": "Audi_A8",
+	"awards": [{
+		"event": "Wards 10",
+		"award": "Best user experience"
+	}, {
+		"event": "PArkers",
+		"award": "Best Luxury Car"
+	}]
+}, {
+	"vehicleBrand": "Volkswagen",
+	"model": "Up!",
+	"year": 2013,
+	"engine": {
+		"name": "1.0 L I3-T ",
+		"type": "petrol"
+	},
+	"powerOutput": 60,
+	"torque": 95,
+	"topSpeed": 159,
+	"acceleration": 15.3,
+	"weight": 932,
+	"bootSpace": 251,
+	"wikipediaSufix": "Volkswagen_Up",
+	"awards": [{
+		"event": "CarSite",
+		"award": "Best city car"
+	}, {
+		"event": "Buisness Car Awards",
+		"award": "Best city car"
+	}]
+}, {
+	"vehicleBrand": "Opel",
+	"model": "Insignia",
+	"year": 2015,
+	"engine": {
+		"name": "2.8 litre turbocharged V6",
+		"type": "diesel"
+	},
+	"powerOutput": 325,
+	"torque": 435,
+	"topSpeed": 270,
+	"acceleration": 6,
+	"weight": 1735,
+	"bootSpace": 500,
+	"wikipediaSufix": "Opel_Insignia",
+	"awards": [{
+		"event": "DEKRA",
+		"award": "Car with fewest flaws"
+	}, {
+		"event": "Buisness Car",
+		"award": "Best upper medium car"
+	}]
+}, {
+	"vehicleBrand": "Mitsubishi",
+	"model": "Lancer",
+	"year": 2010,
+	"engine": {
+		"name": "2.4-liter I-4 ",
+		"type": "petrol"
+	},
+	"powerOutput": 152,
+	"torque": 146,
+	"topSpeed": 221,
+	"acceleration": 9.8,
+	"weight": 1350,
+	"bootSpace": 344,
+	"wikipediaSufix": "Mitsubishi_Lancer",
+	"awards": []
+}, {
+	"vehicleBrand": "Toyota",
+	"model": "Yaris",
+	"year": 2019,
+	"engine": {
+		"name": "1.5-liter DOHC 4-CYL",
+		"type": "petrol"
+	},
+	"powerOutput": 106,
+	"torque": 140,
+	"topSpeed": 193,
+	"acceleration": 9.7,
+	"weight": 1109,
+	"bootSpace": 286,
+	"wikipediaSufix": "Toyota_Yaris",
+	"awards": [{
+		"event": "ASG AWARDS",
+		"award": "Best All-Around Performance"
+	}, {
+		"event": "NOTEWORTHY ASG FINDING",
+		"award": "op all-around performing Mini-compact"
+	}]
+}, {
+	"vehicleBrand": "Volkswagen",
+	"model": "Passat",
+	"year": 2015,
+	"engine": {
+		"name": "turbocharged 1.8-liter I-4",
+		"type": "petrol"
+	},
+	"powerOutput": 170,
+	"torque": 250,
+	"topSpeed": 250,
+	"acceleration": 8.7,
+	"weight": 1109,
+	"bootSpace": 1436,
+	"wikipediaSufix": "Volkswagen_Passat",
+	"awards": [{
+		"event": "Geneva motor show",
+		"award": "Car of the Year"
+	}]
+}, {
+	"vehicleBrand": "Toyota",
+	"model": "Rav4",
+	"year": 2019,
+	"engine": {
+		"name": "2.5L L4 DOHC 16-valve",
+		"type": "petrol"
+	},
+	"powerOutput": 203,
+	"torque": 233,
+	"topSpeed": 250,
+	"acceleration": 9.9,
+	"weight": 1445,
+	"bootSpace": 1436,
+	"wikipediaSufix": "Toyota_RAV4",
+	"awards": [{
+		"event": "Wards 10",
+		"award": "Best Interior Award"
+	}, {
+		"event": "NHTSA",
+		"award": "5-Star Overall Safety Rating"
+	}]
+}, {
+	"vehicleBrand": "Opel",
+	"model": "Astra",
+	"year": 2008,
+	"engine": {
+		"name": "1.7 CDTI ECOTEC",
+		"type": "petrol"
+	},
+	"powerOutput": 115,
+	"torque": 280,
+	"topSpeed": 210,
+	"acceleration": 11.6,
+	"weight": 1145,
+	"bootSpace": 580,
+	"wikipediaSufix": "Opel_Astra",
+	"awards": []
+}])
