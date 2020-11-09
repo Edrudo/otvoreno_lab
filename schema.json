@@ -1,0 +1,118 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/Edrudo/otvoreno_lab/blob/main/cars.json",
+	"type": "array",
+	"title": "Cars",
+	"description": "Set of cars and their specs",
+	"items": {
+		"$id": "#/items",
+		"anyOf": [{
+			"type": "object",
+			"title": "Car",
+			"description": "One instance of my set",
+			"required": [
+				"vehicleBrand",
+				"model",
+				"year",
+				"wikipediaSufix"
+			],
+			"properties": {
+				"vehicleBrand": {
+					"type": "string",
+					"title": "The vehicle brand name",
+					"description": "Name of the company that produces the car"
+				},
+				"model": {
+					"type": "string",
+					"title": "The model name",
+					"description": "Specifies the model of a car"
+				},
+				"year": {
+					"type": "integer",
+					"title": "Year",
+					"description": "Year of production"
+				},
+				"engine": {
+					"type": "object",
+					"title": "Engine object",
+					"description": "This object tells something about the engine that can be found in this car",
+					"required": [
+						"name",
+						"type"
+					],
+					"properties": {
+						"name": {
+							"type": "string",
+							"title": "Name of the engine"
+						},
+						"type": {
+							"type": "string",
+							"title": "What engine uses to produce movement"
+						}
+					}
+				},
+				"powerOutput": {
+					"type": "integer",
+					"title": "The power output of the car",
+					"description": "Tells how much horse power does the car have"
+				},
+				"torque": {
+					"type": "integer",
+					"title": "The torque",
+					"description": "Tells how much torque does the car have"
+				},
+				"topSpeed": {
+					"type": "integer",
+					"title": "The topSpeed specification",
+					"description": "Tells how fast can the car go"
+				},
+				"acceleration": {
+					"type": "number",
+					"title": "The acceleration specification",
+					"description": "Tells how fast can a car go from 0 to 100 km/h"
+				},
+				"weight": {
+					"type": "integer",
+					"title": "Weight",
+					"description": "An explanation about the purpose of this instance."
+				},
+				"bootSpace": {
+					"type": "integer",
+					"title": "Boot space",
+					"description": "Tells how big is cars boot"
+				},
+				"wikipediaSufix": {
+					"type": "string",
+					"title": "Wikipedia sufix",
+					"description": "Wikipedia sufix that can be used to find more information about a car on wikipedia"
+				},
+				"awards": {
+					"type": "array",
+					"title": "The awards",
+					"description": "Awards that a particular car has won",
+					"items": {
+						"award": {
+							"type": "object",
+							"title": "Award object",
+							"description": "Award that a car has won",
+							"required": [
+								"Award",
+								"type"
+							],
+							"properties": {
+								"award": {
+									"type": "string",
+									"title": "Name of the award"
+								},
+								"event": {
+									"type": "string",
+									"title": "From whom or what event is award from"
+								}
+							}
+						}
+					}
+				}
+			}
+		}]
+	}
+}
