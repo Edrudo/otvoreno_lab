@@ -1,0 +1,436 @@
+openapi: 3.0.2
+info:
+  title: Models of cars
+  version: '1.0'
+  contact: 
+    email: "eduard.duras@gmail.com"
+  license:
+    name: "Creative commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+    url: "https://creativecommons.org/publicdomain/zero/1.0/"
+tags:
+  - name: cars
+paths:
+  /cars:
+    description: All cars in database
+    get:
+      description: Fetch all cars in database, it is possible to limit the amount of cars in the response
+      tags: 
+        - cars
+      parameters:
+      - name: limit
+        in: query
+        description: "Limit the amount of cars that will be fetched"
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type: 
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+        '400':
+          description: Error
+    post:
+      description: Insert a new car in a collection
+      tags: 
+        - cars
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              title: User
+              type: object
+              properties:
+                acceleration:
+                  type: number
+                awards:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      award:
+                        type: string
+                      event:
+                        type: string
+                bootSpace:
+                  type: integer
+                engine:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type: 
+                      type: string
+                model:
+                  type: string
+                powerOutput:
+                  type: integer
+                topSpeed:
+                  type: integer
+                torque:
+                  type: integer
+                vehicleBrand:
+                  type: string
+                weight:
+                  type: integer
+                wikipediaSufix:
+                  type: string
+                year:
+                  type: integer
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Error
+    delete:
+      description: Delete car by id
+      tags:
+        - cars
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Deleted
+        '404':
+          description: id not found
+        '401':
+          description: Unauthorized
+    put:
+      description: Update a car in a collection
+      tags: 
+        - cars
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              title: User
+              type: object
+              properties:
+                acceleration:
+                  type: number
+                awards:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      award:
+                        type: string
+                      event:
+                        type: string
+                bootSpace:
+                  type: integer
+                engine:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type: 
+                      type: string
+                model:
+                  type: string
+                powerOutput:
+                  type: integer
+                topSpeed:
+                  type: integer
+                torque:
+                  type: integer
+                vehicleBrand:
+                  type: string
+                weight:
+                  type: integer
+                wikipediaSufix:
+                  type: string
+                year:
+                  type: integer
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Error
+  /year:
+    get:
+      tags:
+        - cars
+      description: All cars that are released in that year
+      parameters:
+      - name: year
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: List of all cars from that year
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type: 
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+  /speed:
+    get:
+      tags:
+        - cars
+      description: All cars that have top speed between two limits
+      parameters:
+      - name: lowerLimit
+        in: query
+        schema:
+          type: integer
+      - name: upperLimit
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: List of all cars that are between two limits
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type: 
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+  /powerOutput:
+    get:
+      tags:
+        - cars
+      description: All cars that have power output between two limits
+      parameters:
+      - name: lowerLimit
+        in: query
+        schema:
+          type: integer
+      - name: upperLimit
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: List of all cars that are between two limits
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type: 
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+  /bootSpace:
+    get:
+      tags:
+        - cars
+      description: All cars that have boot space between two limits
+      parameters:
+      - name: lowerLimit
+        in: query
+        schema:
+          type: integer
+      - name: upperLimit
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: List of all cars that are between two limits
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type: 
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+  
