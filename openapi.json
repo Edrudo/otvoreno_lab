@@ -14,6 +14,9 @@
   "tags": [
     {
       "name": "cars"
+    },
+    {
+      "name": "api specification"
     }
   ],
   "paths": {
@@ -31,7 +34,8 @@
             "description": "Limit the amount of cars that will be fetched",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
@@ -123,7 +127,7 @@
             }
           },
           "400": {
-            "description": "Error",
+            "description": "Client error",
             "content": {
               "application/json": {
                 "schema": {
@@ -144,7 +148,7 @@
             }
           },
           "500": {
-            "description": "Error",
+            "description": "Server error",
             "content": {
               "application/json": {
                 "schema": {
@@ -783,7 +787,7 @@
             }
           },
           "400": {
-            "description": "Error",
+            "description": "Client rror",
             "content": {
               "application/json": {
                 "schema": {
@@ -804,7 +808,7 @@
             }
           },
           "500": {
-            "description": "Error",
+            "description": "Server error",
             "content": {
               "application/json": {
                 "schema": {
@@ -938,7 +942,7 @@
             }
           },
           "400": {
-            "description": "Error",
+            "description": "Client error",
             "content": {
               "application/json": {
                 "schema": {
@@ -959,7 +963,7 @@
             }
           },
           "500": {
-            "description": "Error",
+            "description": "Server error",
             "content": {
               "application/json": {
                 "schema": {
@@ -1093,7 +1097,7 @@
             }
           },
           "400": {
-            "description": "Error",
+            "description": "Client error",
             "content": {
               "application/json": {
                 "schema": {
@@ -1114,7 +1118,7 @@
             }
           },
           "500": {
-            "description": "Error",
+            "description": "Server error",
             "content": {
               "application/json": {
                 "schema": {
@@ -1248,7 +1252,7 @@
             }
           },
           "400": {
-            "description": "Error",
+            "description": "Client error",
             "content": {
               "application/json": {
                 "schema": {
@@ -1269,7 +1273,69 @@
             }
           },
           "500": {
-            "description": "Error",
+            "description": "Server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "object"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/openAPI": {
+      "get": {
+        "tags": [
+          "api specification"
+        ],
+        "description": "Returns this openAPI specification in json format",
+        "responses": {
+          "200": {
+            "description": "openAPI",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Client error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "object"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server error",
             "content": {
               "application/json": {
                 "schema": {
