@@ -256,6 +256,19 @@ paths:
                       type: string
                     response: 
                       type: object
+                      properties:
+                        links:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              href:
+                                type: string
+                              rel:
+                                type: 
+                                  string
+                              type:
+                                type: string
                     status:
                       type: string
         '400':
