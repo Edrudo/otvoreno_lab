@@ -206,7 +206,7 @@ func (app *application) CreateNewCar(w http.ResponseWriter, r *http.Request) {
 
 	err := json.NewDecoder(r.Body).Decode(&data)
 	if err != nil {
-		app.clientError(w, http.StatusBadRequest, "Error occurred while decoding sent data")
+		app.clientError(w, http.StatusBadRequest, "Error occurred while decoding data from body of the request")
 		return
 	}
 
@@ -218,7 +218,7 @@ func (app *application) CreateNewCar(w http.ResponseWriter, r *http.Request) {
 
 	insertedCar, err := storage.GetCarWithId(app.repo, oid)
 
-	response := service.ApiResponseCRUD{
+	response := service.ApiResponsePostAndPut{
 		Status:   "OK",
 		Message:  "Car inserted",
 		Response: service.ModelOneCarDataForResponse(insertedCar),
@@ -245,15 +245,37 @@ func (app *application) DeleteCar(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = storage.DeleteCar(app.repo, oid)
+	deleted, err := storage.DeleteCar(app.repo, oid)
 	if err != nil {
 		app.serverError(w, err, "Could not find car with given id", http.StatusNotFound)
 		return
 	}
 
-	response := service.ApiResponse{
+	if !deleted {
+		response := service.ApiResponseDelete{
+			Status:  "Not found",
+			Message: "Car with id " + oid.Hex() + " was not found",
+			Response: service.ApiResponseObjectDelete{Links: append([]service.Hateoas{}, service.Hateoas{
+				Href: "/cars",
+				Rel:  "create",
+				Type: "POST",
+			})},
+		}
+		res, _ := json.Marshal(response)
+		(w).Header().Set("Content-Type", "application/json")
+		(w).WriteHeader(http.StatusNotFound)
+		_, _ = w.Write(res)
+		return
+	}
+
+	response := service.ApiResponseDelete{
 		Status:  "OK",
-		Message: "Car deleted",
+		Message: "Car with id " + oid.Hex() + " deleted",
+		Response: service.ApiResponseObjectDelete{Links: append([]service.Hateoas{}, service.Hateoas{
+			Href: "/cars",
+			Rel:  "create",
+			Type: "POST",
+		})},
 	}
 	res, _ := json.Marshal(response)
 	(w).Header().Set("Content-Type", "application/json")
@@ -290,9 +312,9 @@ func (app *application) UpdateCar(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	response := service.ApiResponseCRUD{
+	response := service.ApiResponsePostAndPut{
 		Status:  "OK",
-		Message: "Car updated",
+		Message: "Car with id " + oid.Hex() + " updated",
 	}
 
 	car, err := storage.GetCarWithId(app.repo, oid)

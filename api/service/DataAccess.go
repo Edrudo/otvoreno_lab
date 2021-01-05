@@ -2,6 +2,7 @@ package service
 
 import (
 	"github.com/Edrudo/otvoreno_lab/storage"
+	"strconv"
 )
 
 func GetAllCarsWithLimit(repo storage.Repository, limit int64) (ApiResponse, error) {
@@ -9,7 +10,7 @@ func GetAllCarsWithLimit(repo storage.Repository, limit int64) (ApiResponse, err
 	if err != nil {
 		return ApiResponse{}, err
 	}
-	return ModelDataForResponse(data), nil
+	return ModelDataForResponse(data, "Fetched first "+strconv.Itoa(int(limit))+" cars"), nil
 }
 
 func GetAllCarsFromSomeYear(repo storage.Repository, year int64) (ApiResponse, error) {
@@ -17,7 +18,7 @@ func GetAllCarsFromSomeYear(repo storage.Repository, year int64) (ApiResponse, e
 	if err != nil {
 		return ApiResponse{}, err
 	}
-	return ModelDataForResponse(data), nil
+	return ModelDataForResponse(data, "Fetched all cars from year "+strconv.Itoa(int(year))), nil
 }
 
 func GetAllCarsWithSpeedLimit(repo storage.Repository, lowerLimit, upperLimit int) (ApiResponse, error) {
@@ -35,7 +36,7 @@ func GetAllCarsWithSpeedLimit(repo storage.Repository, lowerLimit, upperLimit in
 		}
 	}
 
-	return ModelDataForResponse(data), nil
+	return ModelDataForResponse(data, "Fetched all cars that have top speed between "+strconv.Itoa(int(lowerLimit))+" and "+strconv.Itoa(int(upperLimit))+" km/h"), nil
 }
 func GetAllCarsWithPowerOutputLimit(repo storage.Repository, lowerLimit, upperLimit int) (ApiResponse, error) {
 	allData, err := storage.GetMyOpenData(repo)
@@ -52,7 +53,7 @@ func GetAllCarsWithPowerOutputLimit(repo storage.Repository, lowerLimit, upperLi
 		}
 	}
 
-	return ModelDataForResponse(data), nil
+	return ModelDataForResponse(data, "Fetched all cars that have power output between "+strconv.Itoa(int(lowerLimit))+" and "+strconv.Itoa(int(upperLimit))+" hp"), nil
 }
 func GetAllCarsWithBootSpaceLimit(repo storage.Repository, lowerLimit, upperLimit int) (ApiResponse, error) {
 	allData, err := storage.GetMyOpenData(repo)
@@ -69,5 +70,5 @@ func GetAllCarsWithBootSpaceLimit(repo storage.Repository, lowerLimit, upperLimi
 		}
 	}
 
-	return ModelDataForResponse(data), nil
+	return ModelDataForResponse(data, "Fetched all cars that have boot space between "+strconv.Itoa(int(lowerLimit))+" and "+strconv.Itoa(int(upperLimit))+" liters"), nil
 }

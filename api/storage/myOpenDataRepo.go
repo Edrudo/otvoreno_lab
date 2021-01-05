@@ -113,14 +113,18 @@ func InsertCar(repo Repository, data MyOpenDataStructDIO) (primitive.ObjectID, e
 	return insertedID, err
 }
 
-func DeleteCar(repo Repository, id primitive.ObjectID) error {
+func DeleteCar(repo Repository, id primitive.ObjectID) (bool, error) {
 	lab2Collection := repo.Client.Database("Otvoreno").Collection("lab2")
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*15)
 	defer cancel()
 
-	_, err := lab2Collection.DeleteOne(ctx, bson.M{"_id": id})
-	return err
+	res, err := lab2Collection.DeleteOne(ctx, bson.M{"_id": id})
+	if err != nil {
+		return false, err
+	}
+
+	return res.DeletedCount > 0, nil
 }
 
 func GetCarWithId(repo Repository, id primitive.ObjectID) (MyOpenDataStruct, error) {

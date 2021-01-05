@@ -20,22 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5da6c24-4fa1-44af-90e0-f74e507e63f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab3-api/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/service/DataAccess.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/service/helpers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/service/models.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/storage/DAOs.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/storage/DIO.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/storage/myOpenDataRepo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/cars.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/handlers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/helpers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/routes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3-api/web/web" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/../openapi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/DataAccess.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/DataAccess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/myOpenDataRepo.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/myOpenDataRepo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web" beforeDir="false" afterPath="$PROJECT_DIR$/web/web" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,11 +128,11 @@
       <screen x="0" y="27" width="3840" height="997" />
     </state>
     <state x="755" y="362" width="400" height="334" key="#Go_Modules/0.27.3840.997@0.27.3840.997" timestamp="1604747303937" />
-    <state x="723" y="233" width="464" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1609585306672">
+    <state x="723" y="233" width="464" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1609853382464">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="723" y="233" width="464" height="599" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1609585306672" />
-    <state x="723" y="233" width="464" height="599" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997@0.27.1920.997" timestamp="1608979075459" />
+    <state x="723" y="233" width="464" height="599" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997@0.27.1920.997" timestamp="1609853382464" />
     <state x="595" y="306" width="719" height="696" key="EditFileWatcherDialog" timestamp="1604743416808">
       <screen x="0" y="27" width="3840" height="997" />
     </state>

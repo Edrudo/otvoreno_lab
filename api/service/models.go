@@ -8,10 +8,20 @@ type ApiResponse struct {
 	Message  string              `json:"message"`
 }
 
-type ApiResponseCRUD struct {
+type ApiResponsePostAndPut struct {
 	Response ApiResponseObject `json:"response"`
 	Status   string            `json:"status"`
 	Message  string            `json:"message"`
+}
+
+type ApiResponseDelete struct {
+	Response ApiResponseObjectDelete `json:"response"`
+	Status   string                  `json:"status"`
+	Message  string                  `json:"message"`
+}
+
+type ApiResponseObjectDelete struct {
+	Links []Hateoas `json:"links"`
 }
 
 type Hateoas struct {

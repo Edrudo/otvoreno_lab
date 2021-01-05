@@ -4,10 +4,10 @@ import (
 	"github.com/Edrudo/otvoreno_lab/storage"
 )
 
-func ModelDataForResponse(data storage.MyOpenData) ApiResponse {
+func ModelDataForResponse(data storage.MyOpenData, message string) ApiResponse {
 	retValue := ApiResponse{
 		Status:   "OK",
-		Message:  "Fetched list of cars that fulfil given conditions",
+		Message:  message,
 		Response: []ApiResponseObject{},
 	}
 
