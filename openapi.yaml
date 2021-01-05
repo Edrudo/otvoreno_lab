@@ -75,7 +75,7 @@ paths:
                       items:
                         type: object
                         properties:
-                          rel: 
+                          rel:
                             type: string
                           href:
                             type: string
@@ -90,7 +90,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -103,7 +103,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -114,49 +114,49 @@ paths:
       requestBody:
         required: true
         content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  acceleration:
-                    type: number
-                  awards:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        award:
-                          type: string
-                        event:
-                          type: string
-                  bootSpace:
-                    type: integer
-                  engine:
+          application/json:
+            schema:
+              type: object
+              properties:
+                acceleration:
+                  type: number
+                awards:
+                  type: array
+                  items:
                     type: object
                     properties:
-                      name:
+                      award:
                         type: string
-                      type:
+                      event:
                         type: string
-                  model:
-                    type: string
-                  powerOutput:
-                    type: integer
-                  topSpeed:
-                    type: integer
-                  torque:
-                    type: integer
-                  vehicleBrand:
-                    type: string
-                  weight:
-                    type: integer
-                  wikipediaSufix:
-                    type: string
-                  year:
-                    type: integer
+                bootSpace:
+                  type: integer
+                engine:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                model:
+                  type: string
+                powerOutput:
+                  type: integer
+                topSpeed:
+                  type: integer
+                torque:
+                  type: integer
+                vehicleBrand:
+                  type: string
+                weight:
+                  type: integer
+                wikipediaSufix:
+                  type: string
+                year:
+                  type: integer
       responses:
         '200':
-          description: Success, returns inserted value
+          description: 'Success, returns inserted value'
           content:
             application/json:
               schema:
@@ -203,7 +203,7 @@ paths:
                     items:
                       type: object
                       properties:
-                        rel: 
+                        rel:
                           type: string
                         href:
                           type: string
@@ -218,7 +218,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -231,7 +231,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -245,32 +245,31 @@ paths:
           schema:
             type: string
       responses:
-        '204':
-            description: Success
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    message:
-                      type: string
-                    response: 
-                      type: object
-                      properties:
-                        links:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              href:
-                                type: string
-                              rel:
-                                type: 
-                                  string
-                              type:
-                                type: string
-                    status:
-                      type: string
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  response:
+                    type: object
+                    properties:
+                      links:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            href:
+                              type: string
+                            rel:
+                              type: string
+                            type:
+                              type: string
+                  status:
+                    type: string
         '400':
           description: Client error
           content:
@@ -280,7 +279,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -293,7 +292,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -306,7 +305,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -322,49 +321,49 @@ paths:
       requestBody:
         required: true
         content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  acceleration:
-                    type: number
-                  awards:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        award:
-                          type: string
-                        event:
-                          type: string
-                  bootSpace:
-                    type: integer
-                  engine:
+          application/json:
+            schema:
+              type: object
+              properties:
+                acceleration:
+                  type: number
+                awards:
+                  type: array
+                  items:
                     type: object
                     properties:
-                      name:
+                      award:
                         type: string
-                      type:
+                      event:
                         type: string
-                  model:
-                    type: string
-                  powerOutput:
-                    type: integer
-                  topSpeed:
-                    type: integer
-                  torque:
-                    type: integer
-                  vehicleBrand:
-                    type: string
-                  weight:
-                    type: integer
-                  wikipediaSufix:
-                    type: string
-                  year:
-                    type: integer
+                bootSpace:
+                  type: integer
+                engine:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                model:
+                  type: string
+                powerOutput:
+                  type: integer
+                topSpeed:
+                  type: integer
+                torque:
+                  type: integer
+                vehicleBrand:
+                  type: string
+                weight:
+                  type: integer
+                wikipediaSufix:
+                  type: string
+                year:
+                  type: integer
       responses:
         '200':
-          description: Success, returns inserted value
+          description: 'Success, returns inserted value'
           content:
             application/json:
               schema:
@@ -411,7 +410,7 @@ paths:
                     items:
                       type: object
                       properties:
-                        rel: 
+                        rel:
                           type: string
                         href:
                           type: string
@@ -426,7 +425,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -439,7 +438,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -504,7 +503,7 @@ paths:
                       items:
                         type: object
                         properties:
-                          rel: 
+                          rel:
                             type: string
                           href:
                             type: string
@@ -519,7 +518,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -532,7 +531,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -601,7 +600,7 @@ paths:
                       items:
                         type: object
                         properties:
-                          rel: 
+                          rel:
                             type: string
                           href:
                             type: string
@@ -616,7 +615,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -629,7 +628,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -698,7 +697,7 @@ paths:
                       items:
                         type: object
                         properties:
-                          rel: 
+                          rel:
                             type: string
                           href:
                             type: string
@@ -713,7 +712,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -726,7 +725,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -795,7 +794,7 @@ paths:
                       items:
                         type: object
                         properties:
-                          rel: 
+                          rel:
                             type: string
                           href:
                             type: string
@@ -810,7 +809,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -823,7 +822,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -848,7 +847,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
@@ -861,9 +860,7 @@ paths:
                 properties:
                   message:
                     type: string
-                  response: 
+                  response:
                     type: object
                   status:
                     type: string
-  
-
