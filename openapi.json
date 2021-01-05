@@ -386,7 +386,7 @@
           }
         ],
         "responses": {
-          "204": {
+          "200": {
             "description": "Success",
             "content": {
               "application/json": {
@@ -397,7 +397,26 @@
                       "type": "string"
                     },
                     "response": {
-                      "type": "object"
+                      "type": "object",
+                      "properties": {
+                        "links": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "href": {
+                                "type": "string"
+                              },
+                              "rel": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
                     },
                     "status": {
                       "type": "string"
