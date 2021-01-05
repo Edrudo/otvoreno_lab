@@ -244,6 +244,7 @@ paths:
           in: query
           schema:
             type: string
+          required: true
       responses:
         '200':
           description: Success
@@ -318,6 +319,7 @@ paths:
           in: query
           schema:
             type: string
+          required: true
       requestBody:
         required: true
         content:
@@ -452,6 +454,7 @@ paths:
           in: query
           schema:
             type: integer
+          required: true
       responses:
         '200':
           description: List of all cars from that year
@@ -545,10 +548,12 @@ paths:
           in: query
           schema:
             type: integer
+          required: true
         - name: upperLimit
           in: query
           schema:
             type: integer
+          required: true
       responses:
         '200':
           description: List of all cars that are between two limits
@@ -642,10 +647,12 @@ paths:
           in: query
           schema:
             type: integer
+          required: true
         - name: upperLimit
           in: query
           schema:
             type: integer
+          required: true
       responses:
         '200':
           description: List of all cars that are between two limits
@@ -739,10 +746,12 @@ paths:
           in: query
           schema:
             type: integer
+          required: true
         - name: upperLimit
           in: query
           schema:
             type: integer
+          required: true
       responses:
         '200':
           description: List of all cars that are between two limits
