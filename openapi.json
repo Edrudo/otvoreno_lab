@@ -382,7 +382,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
@@ -502,7 +503,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           }
         ],
         "requestBody": {
@@ -714,7 +716,8 @@
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
@@ -862,14 +865,16 @@
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           },
           {
             "name": "upperLimit",
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
@@ -1017,14 +1022,16 @@
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           },
           {
             "name": "upperLimit",
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
@@ -1172,14 +1179,16 @@
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           },
           {
             "name": "upperLimit",
             "in": "query",
             "schema": {
               "type": "integer"
-            }
+            },
+            "required": true
           }
         ],
         "responses": {
