@@ -122,6 +122,20 @@
                             }
                           }
                         }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
+                          }
+                        }
                       }
                     }
                   }
@@ -325,6 +339,20 @@
                           "type": {
                             "type": "string"
                           }
+                        }
+                      }
+                    },
+                    "@context": {
+                      "type": "object",
+                      "properties": {
+                        "@type": {
+                          "type": "string"
+                        },
+                        "acceleration": {
+                          "type": "string"
+                        },
+                        "vehicleBrand": {
+                          "type": "string"
                         }
                       }
                     }
@@ -663,6 +691,20 @@
                           }
                         }
                       }
+                    },
+                    "@context": {
+                      "type": "object",
+                      "properties": {
+                        "@type": {
+                          "type": "string"
+                        },
+                        "acceleration": {
+                          "type": "string"
+                        },
+                        "vehicleBrand": {
+                          "type": "string"
+                        }
+                      }
                     }
                   }
                 }
@@ -811,6 +853,20 @@
                             "type": {
                               "type": "string"
                             }
+                          }
+                        }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
                           }
                         }
                       }
@@ -971,6 +1027,20 @@
                             }
                           }
                         }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
+                          }
+                        }
                       }
                     }
                   }
@@ -1129,6 +1199,20 @@
                             }
                           }
                         }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
+                          }
+                        }
                       }
                     }
                   }
@@ -1285,6 +1369,20 @@
                             "type": {
                               "type": "string"
                             }
+                          }
+                        }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
                           }
                         }
                       }
@@ -1501,6 +1599,20 @@
                             "type": {
                               "type": "string"
                             }
+                          }
+                        }
+                      },
+                      "@context": {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "acceleration": {
+                            "type": "string"
+                          },
+                          "vehicleBrand": {
+                            "type": "string"
                           }
                         }
                       }
