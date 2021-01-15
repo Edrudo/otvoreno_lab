@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5da6c24-4fa1-44af-90e0-f74e507e63f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/service/DataAccess.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/DataAccess.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/helpers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/models.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/myOpenDataRepo.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/myOpenDataRepo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web" beforeDir="false" afterPath="$PROJECT_DIR$/web/web" afterDir="false" />
-    </list>
+    <list default="true" id="c5da6c24-4fa1-44af-90e0-f74e507e63f9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +57,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../otvoreno_lab-3.0 (5)/otvoreno_lab-3.0" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,11 +134,11 @@
       <screen x="0" y="27" width="3840" height="997" />
     </state>
     <state x="842" y="398" width="216" height="268" key="EnvironmentVariablesDialog/0.27.3840.997@0.27.3840.997" timestamp="1604747294677" />
-    <state x="372" y="283" width="424" height="491" key="FileChooserDialogImpl" timestamp="1609601625561">
+    <state x="372" y="283" width="424" height="491" key="FileChooserDialogImpl" timestamp="1609859334549">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="372" y="283" width="374" height="491" key="FileChooserDialogImpl/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1609601625561" />
-    <state x="372" y="283" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.997@0.27.1920.997" timestamp="1606738773144" />
+    <state x="372" y="283" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.997@0.27.1920.997" timestamp="1609859334549" />
     <state x="743" y="283" width="424" height="491" key="FileChooserDialogImpl/0.27.3840.997@0.27.3840.997" timestamp="1604747299732" />
     <state x="449" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1604743417693">
       <screen x="0" y="27" width="3840" height="997" />

@@ -70,6 +70,8 @@ paths:
                       type: string
                     year:
                       type: integer
+                    picture:
+                      type: string
                     links:
                       type: array
                       items:
@@ -198,6 +200,8 @@ paths:
                     type: string
                   year:
                     type: integer
+                  picture:
+                    type: string
                   links:
                     type: array
                     items:
@@ -361,6 +365,8 @@ paths:
                   type: string
                 year:
                   type: integer
+                picture:
+                  type: string
       responses:
         '200':
           description: 'Success, returns inserted value'
@@ -405,6 +411,8 @@ paths:
                     type: string
                   year:
                     type: integer
+                  picture:
+                      type: string
                   links:
                     type: array
                     items:
@@ -498,6 +506,8 @@ paths:
                       type: string
                     year:
                       type: integer
+                    picture:
+                      type: string
                     links:
                       type: array
                       items:
@@ -595,6 +605,8 @@ paths:
                       type: string
                     year:
                       type: integer
+                    picture:
+                      type: string
                     links:
                       type: array
                       items:
@@ -692,6 +704,8 @@ paths:
                       type: string
                     year:
                       type: integer
+                    picture:
+                      type: string
                     links:
                       type: array
                       items:
@@ -789,6 +803,8 @@ paths:
                       type: string
                     year:
                       type: integer
+                    picture:
+                      type: string
                     links:
                       type: array
                       items:
@@ -838,6 +854,104 @@ paths:
             application/json:
               schema:
                 type: object
+        '400':
+          description: Client error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  response:
+                    type: object
+                  status:
+                    type: string
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  response:
+                    type: object
+                  status:
+                    type: string
+  /carModels/{id}:
+    get:
+      description: 'Fetch all cars in database, it is possible to limit the amount of cars in the response'
+      tags:
+        - cars
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            minimum: 1
+          description: The user ID
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    acceleration:
+                      type: number
+                    awards:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          award:
+                            type: string
+                          event:
+                            type: string
+                    bootSpace:
+                      type: integer
+                    engine:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type:
+                          type: string
+                    model:
+                      type: string
+                    powerOutput:
+                      type: integer
+                    topSpeed:
+                      type: integer
+                    torque:
+                      type: integer
+                    vehicleBrand:
+                      type: string
+                    weight:
+                      type: integer
+                    wikipediaSufix:
+                      type: string
+                    year:
+                      type: integer
+                    picture:
+                      type: string
+                    links:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          rel:
+                            type: string
+                          href:
+                            type: string
+                          type:
+                            type: string
         '400':
           description: Client error
           content:
