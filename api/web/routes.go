@@ -15,7 +15,7 @@ func (app *application) routes() http.Handler {
 	mux.Get("/speed", http.HandlerFunc(app.GetMyOpenDataWithSpeedFilter))
 	mux.Get("/powerOutput", http.HandlerFunc(app.GetMyOpenDataWithPowerOutputFilter))
 	mux.Get("/bootSpace", http.HandlerFunc(app.GetMyOpenDataWithBootSpaceFilter))
+	mux.Get("/carModels/{id}/picture", http.HandlerFunc(app.GetCarPicture))
 	mux.Get("/carModels/{id}", http.HandlerFunc(app.GetOneCar))
-	mux.Get("/{id}/picture", http.HandlerFunc(app.GetCarPicture))
 	return mux
 }
